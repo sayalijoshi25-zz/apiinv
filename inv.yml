@@ -4,9 +4,8 @@
   tasks:
     - name: Update Ansible Tower inventory
       uri:
-       url: http://13.233.93.98/api/v2/inventories
+       url: https://13.233.93.98/api/v2/inventories
        user: admin
-       password: redhat
        method: POST
        body: '{ "name" : "13.233.93.98", "organisation": "1"}'
        force_basic_auth: yes
