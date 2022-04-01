@@ -1,0 +1,16 @@
+---
+- hosts: localhost
+  vars:
+    13.233.93.98
+  tasks:
+    - name: Update Ansible Tower inventory
+      uri:
+       url: https://13.233.93.98/api/v2/inventories
+       user: admin
+       password: redhat
+       method: POST
+       body: '{ "name" : "{{FQDN}}" }'
+       force_basic_auth: yes
+       status_code: 201
+       body_format: json
+       validate_certs: no
