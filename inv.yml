@@ -8,7 +8,7 @@
        user: "admin"
        password: "redhat"
        method: POST
-       return_content: yes
+       
        body: '{ "name" : "localhost", "organisation": 1}'
        force_basic_auth: yes
        status_code: 201,200,202
