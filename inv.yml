@@ -8,7 +8,7 @@
        user: admin
        password: "redhat"
        method: POST
-       body: '{ "name" : "13.233.93.98", "organisation": "1"}'
+       body: '{ "name" : "localhost", "organisation": "1"}'
        force_basic_auth: yes
        status_code: 201
        body_format: json
